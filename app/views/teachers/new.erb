@@ -1,0 +1,21 @@
+<% if @teacher && @teacher.errors %>
+  <ul>
+  <% @teacher.errors.full_messages.each do |err| %>
+    <li><%= err %></li>
+  <% end %>
+  </ul>
+<% end %>
+
+<h1>Teacher registration</h1>
+
+<form action="/teachers" method="POST">
+  <label for="name_input">Name:</label>
+  <input type="text" name="teacher[name]" id="name_input">
+
+  <label for="username_input">Github username:</label>
+  <input type="text" name="teacher[username]" id="username_input">
+
+  <label for="password_input">Password:</label>
+  <input type="password" name="teacher[password]" id="password_input">
+  <input type="submit">
+</form>
