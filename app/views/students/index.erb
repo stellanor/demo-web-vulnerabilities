@@ -1,0 +1,7 @@
+<div>
+<p><a href="/logout">Logout</a>
+</div>
+
+<% @students.each do |student| %>
+  <p><a href="/students/<%= student.id %>"><%= student.name %></a></p>
+<% end %>
