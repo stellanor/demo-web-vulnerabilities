@@ -1,30 +1,6 @@
-> **Note**: This branch (master) contains a skeleton without any app code, perfect for creating a _new_ application or challenge. If you're looking for an example app built with this skeleton, take a look at the [example](/../..//tree/example) branch which includes basic CRUD and RSpec tests.
+# Basic server-side vulnerabilities demo
 
-### Purpose
-The Sinatra Skeleton:
+I designed this repo to create some bite-sized demonstrations of common server-side vulnerabiltiies for my web development students at Dev Bootcamp Chicago. This is meant to be demoed in person in early phase 3. Students have used Sinatra for weeks, and have just been exposed to Rails concepts such as CSRF tokens and strong params. This is meant to put those problems in Sinatra terms. 
 
-1. Provides a foundation for building challenges or creating a new Sinatra application.
-2. Demonstrates a reasonable set of practices around building Sinatra applications.
-3. Eases the transition to Rails for Dev Bootcamp students
+This repo includes an example of Cross-Site Request Forgery (CSRF) and exploiting HTTP request parameters with Active Record object initialization.
 
-### Quickstart
-
-1.  `bundle install`
-2.  `shotgun config.ru`
-
-As needed, create models & migrations with the `rake` tasks:
-
-```
-rake generate:migration  # Create an empty migration in db/migrate, e.g., rake generate:migration NAME=create_tasks
-rake generate:model      # Create an empty model in app/models, e.g., rake generate:model NAME=User
-```
-
-### Contributing
-
-We would love for you to help make the skeleton more awesome, There are three ways to contribute:
-
-1. Ask for a bug fix or enhancement!
-2. Submit a pull request for a bug fix or enhancement!
-3. Code review an open pull request!
-
-Be prepared to give and receive specific, actionable, and kind feedback!
